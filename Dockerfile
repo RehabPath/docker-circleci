@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Marc Tanis <marc@blendimc.com>
 
 # Install AWS
-RUN apt-get update && apt-get install -y awscli jq
+RUN apt-get update && apt-get install -y awscli jq curl
 # Install Docker Client
 RUN set -x && \
             VER="17.03.0-ce" && \
