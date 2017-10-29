@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM blendmarketing/webpack
 MAINTAINER Marc Tanis <marc@blendimc.com>
 
 # Install AWS
