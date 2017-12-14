@@ -3,8 +3,10 @@ MAINTAINER Marc Tanis <marc@blendimc.com>
 
 # Install AWS
 RUN apt-get update && \
-    apt-get install -y python3-pip jq curl vim && \
+    apt-get install -y python3-pip jq curl vim php5-cli && \
     pip3 install awscli
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 # Install Docker Client
 RUN set -x && \
             VER="17.03.0-ce" && \
