@@ -3,7 +3,7 @@ MAINTAINER Marc Tanis <marc@blendimc.com>
 
 # Install AWS
 RUN apt-get update && \
-    apt-get install -y python3-pip jq curl vim php7-cli && \
+    apt-get install -y python3-pip jq curl vim php7.0-cli && \
     pip3 install awscli
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
