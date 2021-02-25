@@ -1,4 +1,4 @@
-FROM rehabpath/webpack
+FROM baymose/webpack
 MAINTAINER Bailey Griswold <bailey@rehabpath.com>
 
 # Install AWS
