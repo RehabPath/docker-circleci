@@ -1,4 +1,4 @@
-FROM baymose/webpack
+FROM baymose/docker-webpack
 MAINTAINER Bailey Griswold <bailey@rehabpath.com>
 
 # Install AWS
