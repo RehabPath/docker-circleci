@@ -2,9 +2,8 @@ FROM baymose/docker-webpack
 MAINTAINER Bailey Griswold <bailey@rehabpath.com>
 
 # Install AWS
-RUN add-apt-repository ppa:ondrej/php &&\
-    apt-get update && \
-    apt-get install -y python3-pip jq curl vim php5.6 && \
+RUN apt-get update && \
+    apt-get install -y python3-pip jq curl vim php && \
     pip3 install awscli
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
